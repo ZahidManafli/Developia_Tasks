@@ -1,0 +1,161 @@
+/* Style for all tags */
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+}
+
+/* Style for section */
+section{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to bottom, #ff0000, #008000);
+    background-size: 200% 200%;
+    animation: backgroundColor 15s ease infinite;
+}
+
+/* Animation that green and red color replace each other */
+@keyframes backgroundColor {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+
+/* Style for container of section */
+.section-container{
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+}
+
+/* Style for row that inside of container of section */
+.row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style for container that is contains img, h1, p and a tags*/
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    align-items: center;
+    text-align: center;
+    background-color: darkblue;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 1vw;
+    width: 30vw;
+    height: 35vw;
+    border: 3px solid yellow;
+    box-shadow: 10px 3px 30px 10px rgba(0, 0, 0, 2.0);
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+/* if we mouse over the container then container size increase 1.2x */
+.container:hover{
+    transform: scale(1.1);
+}
+
+/* .image container that contains transparent img */
+.image{
+    width: 100%;
+    height: 18vw;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+/*Style for harley davidson image*/
+.container img{
+    width: 100%;
+    border-radius: 10px;
+    filter: drop-shadow(20px 20px 5px #ccc);
+}
+
+/* driving animation */
+@keyframes driving {
+    0%{
+        transform: translateX(0);
+    }
+    20%{
+        transform: translateX(-20%);
+    }
+    40%{
+        transform: translateX(700%);
+    }
+    60%{
+        transform: translateX(-700%);
+    }
+    80%{
+        position: absolute;
+        z-index: -99999;
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+
+/* if mause over the container then driving animation will run */
+.container:hover img{
+    animation: driving 3s;
+}
+
+/* Style for "Harley Davidson" text */
+.container h1{
+    color: aqua;
+    font-size: 2vw;
+    font-weight: 700;
+    border-right: 1px solid white;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    animation: typing 3.5s steps(40,end) infinite,
+    blink-caret .5s step-end infinite;
+}
+
+/* typing and blick-carter animation for h1 */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to { 
+        width: 62%;
+    }
+}
+@keyframes blink-caret {
+    from, to { border-right-color: transparent }
+    50% { border-right-color: white }
+}
+
+/*Style for "Best motocycle company in the world" text*/
+.container p{
+    color: white;
+    font-size: 1.3vw;
+    width: 100%;
+}
+
+/* Style for link that if we click it then we will enter the harley davidson motocycle in Amazon shop site. */
+.container a{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    width: 50%;
+    font-size: 1.2vw;
+    height: 3vw;
+    padding: calc((3vw - 1.2vw)/2) 0;
+    border-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+/* if we mause over the a tag then this style run */
+.container a:hover{
+    background-color: white;
+    color: black;
+    font-weight: 500;
+}
