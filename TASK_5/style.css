@@ -31,15 +31,17 @@ nav{
     width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 1.5vw 0;
+    padding: 1vw 0;
 }
 
 .logo{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 21%;
+    width: 14%;
 }
+
+
 
 nav .logo{
     font-weight: bold;
@@ -331,7 +333,7 @@ section:nth-child(4) .row img{
 }
 
 section:nth-child(4) .row .content{
-    height: 75%;
+    height: 55%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -379,7 +381,7 @@ section:nth-child(5) .row .top-of-section-5{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 25%;
+    height: 22%;
     color: #0F2137;
 }
 
@@ -607,8 +609,8 @@ footer .contact .icon-link:nth-child(2) i{
 }
 
 footer .contact .icon-link:nth-child(4) .icon{
-    width: 1.6vw;
-    height: 1.6vw;
+    width: 1.1vw;
+    height: 1.1vw;
     border-radius: 50%;
     display: flex;
     justify-content: center;
