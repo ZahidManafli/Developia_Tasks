@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(to bottom, rgb(130, 130, 253),purple);
+}
+
+.main-container{
+    position: relative;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 35vw;
+    margin: 6vw auto;
+    gap: 1vw;
+    padding: 2vw;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0 rgba(0, 0, 0, 0.4);
+}
+
+.underline-of-registration{
+    position: absolute;
+    top: 11%;
+    left: 2vw;
+    height: 0.2vw;
+    width: 2vw;
+    background: linear-gradient(to right, rgb(130, 130, 253),purple);
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 23vw;
+}
+
+.top-of-form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.top-of-form label{
+    font-weight: 600;
+    display: block;
+    margin-top: 1vw;
+}
+
+.top-of-form input{
+    width: 22vw;
+    padding: 0.6vw 1.2vw;
+    outline: none;
+    margin-top: 0.5vw;
+}
+
+.top-of-form input::placeholder{
+    font-size: 1.2vw;
+}
+
+.bottom-of-form{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+}
+
+.bottom-of-form .inputs{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+button{
+    background: linear-gradient(to right, rgb(130, 130, 253),purple);
+    color: white;
+    font-size: 1.5vw;
+    padding-bottom: 1vw;
+    letter-spacing: 0.1vw;
+    height: 2.5vw;
+    border-radius: 5px;
+    border: none;
+    margin-top: 0.5vw;
+}
