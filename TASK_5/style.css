@@ -432,7 +432,7 @@ section:nth-child(7){
 }
 
 section:nth-child(7) .row .top-of-row{
-    height: 12vw !important;
+    height: 10vw !important;
 }
 
 section:nth-child(7) .row .top-of-row h3{
