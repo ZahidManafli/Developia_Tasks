@@ -529,6 +529,7 @@ section:nth-child(8) .right-side form .input input {
   border-bottom: 1px solid black;
   outline: none;
   padding: 3%;
+  font-size: 1.5vw;
 }
 section:nth-child(8) .right-side form .input input::-moz-placeholder {
   font-size: 1.5vw;
@@ -541,6 +542,7 @@ section:nth-child(8) .right-side form .input textarea {
   border-bottom: 1px solid black;
   outline: none;
   height: 15vw;
+  font-size: 1.5vw;
   padding: 3%;
 }
 section:nth-child(8) .right-side form .input textarea::-moz-placeholder {

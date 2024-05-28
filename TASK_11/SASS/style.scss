@@ -558,6 +558,7 @@ section:nth-child(8){
                     border-bottom: 1px solid black;
                     outline: none;
                     padding: 3%;
+                    font-size: $size-sm;
                 }
                 input::placeholder{
                     font-size: $size-sm;
@@ -568,6 +569,7 @@ section:nth-child(8){
                     border-bottom: 1px solid black;
                     outline: none;
                     height: 15vw;
+                    font-size: $size-sm;
                     padding: 3%;
                 }
                 textarea::placeholder{
