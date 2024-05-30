@@ -1,0 +1,30 @@
+@mixin square_container($bg-color,$color){
+    background-color: $bg-color;
+    width: 30%;
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    color: $color;
+    padding: 3%;
+    p{
+        text-align: center;
+        font-size: calc(0.8rem + 0.5vw);
+    }
+    h3{
+        font-size: calc(1.5rem + 0.5vw);
+    }
+}
+
+@mixin button_style($width, $height, $bg-color){
+    width: $width;
+    height: $height;
+    background-color: $bg-color;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    font-size: calc(1rem + 0.5vw);
+}
