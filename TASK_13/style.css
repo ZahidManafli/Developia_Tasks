@@ -1,0 +1,347 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  outline: none;
+}
+
+@font-face {
+  font-family: Arizonia;
+  src: url(./assets/fonts/Arizonia-Regular.ttf);
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+}
+
+section {
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  margin: 5rem 0 !important;
+}
+
+.colum-direction {
+  flex-direction: column;
+}
+
+.green-button {
+  width: calc(20vw + 1rem);
+  height: calc(6vh + 1rem);
+  background-color: #2ccc38;
+  border: none;
+  color: white;
+  font-size: calc(1rem + 0.5vw);
+}
+
+section:nth-child(1) {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/images/section1-images.jpg);
+  height: calc(110vh + 1rem);
+  background-size: cover;
+  background-position: 0% 35%;
+  position: relative;
+  z-index: 1;
+}
+section:nth-child(1) .row {
+  justify-content: center;
+  align-items: center;
+  gap: calc(1.5rem + 0.5vw);
+  margin: -5rem 0 !important;
+}
+section:nth-child(1) h1 {
+  color: white;
+  font-size: calc(12rem + 0.5vw);
+  font-family: Arizonia !important;
+}
+section:nth-child(1) p {
+  font-size: calc(2.5rem + 0.5vw);
+  color: white;
+  margin-top: -3rem;
+}
+
+.section2 {
+  height: calc(60vh + 1rem);
+}
+.section2 .row {
+  justify-content: center;
+  align-items: center;
+}
+.section2 .row p {
+  width: 100%;
+  text-align: center;
+  color: black;
+  font-size: calc(1.5rem + 0.5vw);
+  font-family: Arizonia !important;
+}
+.section2 .row h3 {
+  font-size: calc(2rem + 0.5vw);
+}
+.section2 .row .cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.section2 .row .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+  gap: calc(0.2rem + 0.2vw);
+}
+.section2 .row .cards .card img {
+  width: 100%;
+}
+.section2 .row .cards .card .green-circle {
+  width: calc(4rem + 0.5vw);
+  height: calc(4rem + 0.5vh);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #2ccc38;
+  font-size: calc(2rem + 0.5vw);
+  color: white;
+  font-weight: bold;
+}
+.section2 .row .cards .card p {
+  font-size: calc(1rem + 0.5vw);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+}
+
+.section3, .section4 {
+  background-color: #eafdeb;
+  height: calc(75vh + 1rem);
+}
+.section3 .row, .section4 .row {
+  align-items: center;
+  justify-content: space-between;
+}
+.section3 .row .content, .section4 .row .content {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.section3 .row .content h2, .section4 .row .content h2 {
+  font-size: calc(2rem + 0.5vw);
+}
+.section3 .row .content p, .section4 .row .content p {
+  font-size: calc(0.8rem + 0.5vw);
+  text-align: center;
+}
+.section3 .row img, .section4 .row img {
+  width: 40%;
+  height: calc(25rem + 0.5vh);
+  border-radius: 50%;
+}
+
+.section4 {
+  background-color: white;
+}
+.section4 .row {
+  flex-direction: row-reverse;
+}
+
+.section5 {
+  background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(./assets/images/section5-bg.jpg);
+  height: calc(55vh + 1rem);
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+.section5 .row {
+  justify-content: center;
+  align-items: center;
+}
+.section5 .info {
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.section5 .info .green-circle {
+  width: calc(8rem + 0.5vw);
+  height: calc(8rem + 0.5vh);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2ccc38;
+}
+.section5 .info .green-circle img {
+  width: 70%;
+  height: 70%;
+}
+.section5 .info p {
+  font-size: calc(1rem + 0.5vw);
+  color: white;
+}
+
+section:nth-child(6) .row {
+  justify-content: center;
+  align-items: center;
+}
+section:nth-child(6) .row p {
+  font-family: Arizonia !important;
+  font-size: calc(1.5rem + 0.5vw);
+}
+section:nth-child(6) .row h2 {
+  font-size: calc(2rem + 0.5vw);
+}
+section:nth-child(6) .row .impacts {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(2, auto);
+  gap: 2vw;
+  margin-top: 5vw;
+}
+section:nth-child(6) .row .impacts .impact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+section:nth-child(6) .row .impacts .impact img {
+  width: 20%;
+  height: 40%;
+}
+section:nth-child(6) .row .impacts .impact p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif !important;
+  font-size: calc(0.8rem + 0.5vw);
+  text-align: center;
+}
+
+section:nth-child(7) {
+  background-color: #eafdeb;
+  height: calc(95vh + 1rem);
+}
+section:nth-child(7) .row {
+  align-items: center;
+  padding: 3rem 0 !important;
+}
+section:nth-child(7) .row p {
+  font-family: Arizonia !important;
+  font-size: calc(1.5rem + 0.5vw);
+}
+section:nth-child(7) .row h2 {
+  font-size: calc(2rem + 0.5vw);
+  width: 100%;
+  text-align: center;
+}
+section:nth-child(7) .row .blows {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+section:nth-child(7) .row .blows .blow {
+  margin-top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 48%;
+  background-color: white;
+  gap: 1vw;
+  padding: 1.5vw;
+}
+section:nth-child(7) .row .blows .blow img {
+  width: calc(13rem + 0.5vw);
+  height: calc(13rem + 0.5vh);
+  border-radius: 50%;
+  margin-top: -5rem;
+}
+section:nth-child(7) .row .blows .blow p {
+  text-align: center;
+  font-size: calc(0.8rem + 0.5vw);
+}
+
+section:nth-child(8) {
+  height: calc(140vh + 1rem);
+}
+section:nth-child(8) .grid {
+  padding: 5vw 0 !important;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 31.99%);
+  grid-template-rows: 50% 50%;
+  gap: 2vw;
+}
+section:nth-child(8) .grid img {
+  width: 100%;
+  height: 100%;
+}
+
+section:nth-child(9) .row {
+  align-items: center;
+  gap: 4vw;
+}
+section:nth-child(9) .row h2 {
+  font-size: calc(2rem + 0.5vw);
+}
+section:nth-child(9) .row .content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+section:nth-child(9) .row .content .left-side {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
+}
+section:nth-child(9) .row .content .left-side img {
+  width: 70%;
+  border-radius: 50%;
+}
+section:nth-child(9) .row .content .right-side {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+section:nth-child(9) .row .content .right-side h3 {
+  font-size: calc(1.5rem + 0.5vw);
+  font-weight: 500;
+}
+section:nth-child(9) .row .content .right-side p {
+  font-size: calc(0.8rem + 0.5vw);
+}
+section:nth-child(9) .row .content .right-side .input {
+  width: 100%;
+  height: calc(2.7rem + 0.5vh);
+  display: flex;
+}
+section:nth-child(9) .row .content .right-side .input input {
+  width: 70%;
+  font-size: calc(0.8rem + 0.5vw);
+  padding: 4%;
+  background-color: #f2f2f2 !important;
+  border: none;
+}
+section:nth-child(9) .row .content .right-side .input button {
+  width: 30%;
+  background-color: #2ccc38;
+  color: white;
+  border: none;
+  font-size: calc(1rem + 0.5vw);
+}
