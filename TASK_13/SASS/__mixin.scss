@@ -1,0 +1,17 @@
+@mixin green_circle($w,$h){
+    width: calc($w + 0.5vw);
+    height: calc($h + 0.5vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #2ccc38;
+    font-size: calc(2rem + 0.5vw);
+    color: white;
+    font-weight: bold;
+}
+
+@mixin img_w_h($w,$h){
+    width: $w;
+    height: $h;
+}

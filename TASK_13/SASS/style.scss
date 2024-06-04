@@ -59,20 +59,11 @@ section:nth-child(1){
                 gap: calc(0.2rem + 0.2vw);
 
                 img{
-                    width: 100%;
+                    @include img_w_h(100%,100%);
                 }
 
                 .green-circle{
-                    width: calc(4rem + 0.5vw);
-                    height: calc(4rem + 0.5vh);
-                    display: flex;
-                    align-items: center;
-                    justify-content: center;
-                    border-radius: 50%;
-                    background-color: #2ccc38;
-                    font-size: calc(2rem + 0.5vw);
-                    color: white;
-                    font-weight: bold;
+                    @include green_circle(4rem,4rem);
                 }
 
                 p{
@@ -110,8 +101,7 @@ section:nth-child(1){
         }
 
         img{
-            width: 40%;
-            height: calc(25rem + 0.5vh);
+            @include img_w_h(40%,calc(25rem + 0.5vh));
             border-radius: 50%;
         }
     }
@@ -145,17 +135,10 @@ section:nth-child(1){
         justify-content: center;
         gap: 1vw;
         .green-circle{
-            width: calc(8rem + 0.5vw);
-            height: calc(8rem + 0.5vh);
-            border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: #2ccc38;
+            @include green_circle(8rem,8rem);
     
             img{
-                width: 70%;
-                height: 70%;
+                @include img_w_h(70%,70%);
             }
         }
 
@@ -192,8 +175,7 @@ section:nth-child(6){
                 gap: 1vw;
 
                 img{
-                    width: 20%;
-                    height: 40%;
+                    @include img_w_h(20%,40%);
                 }
                 p{
                     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
@@ -238,13 +220,13 @@ section:nth-child(7){
                 padding: 1.5vw;
 
                 img{
-                    width: calc(13rem + 0.5vw);
-                    height: calc(13rem + 0.5vh);
+                    @include img_w_h(calc(13rem + 0.5vw),calc(13rem + 0.5vh));
                     border-radius: 50%;
                     margin-top: -5rem;
                 }
 
                 p{
+                    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif !important;
                     text-align: center;
                     font-size: calc(0.8rem + 0.5vw);
                 }
@@ -264,8 +246,7 @@ section:nth-child(8){
         grid-template-rows: 50% 50%;
         gap: 2vw;
         img{
-            width: 100%;
-            height: 100%;
+            @include img_w_h(100%,100%);
         }
     }
 }
@@ -289,7 +270,7 @@ section:nth-child(9){
                 gap: 2vw;
 
                 img{
-                    width: 70%;
+                    @include img_w_h(70%,100%);
                     border-radius: 50%;
                 }
             }
