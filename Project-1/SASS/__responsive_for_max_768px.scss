@@ -1,0 +1,95 @@
+@media screen and (max-width:768px) {
+    section:nth-child(1){
+        nav{
+            img{
+                width: 70px !important;
+            }
+            .hanburger{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                gap: calc(0.1rem + 0.5vw);
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                background-color: #137547;
+                div{
+                    width: 40%;
+                    height: 0.3vw;
+                    background-color: white;
+                }
+            }
+        }
+        .content{
+            gap: 20px;
+    
+            h1{
+                font-size: calc(2.0rem + 0.5vw);
+                width:400px;
+            }
+    
+            button{
+                padding: calc(0.4rem + 0.5vw) calc(2.5rem + 0.5vw);
+                font-size: calc(0.8rem + 0.5vw);
+            }
+        }
+    }
+    section:nth-child(2){
+
+        .row{
+            p{
+                font-size: calc(0.5rem + 0.5vw) !important;
+                text-align: center !important;
+            }
+            h1{
+                font-size: calc(2rem + 0.5vw) !important;
+            }
+            .cards{
+                flex-direction: column !important;
+                gap: calc(4rem + 0.5vw) !important;
+                .card{
+                    width: 100% !important;
+                    p{
+                        font-size: calc(1rem + 0.5vw) !important;
+                        text-align: left !important;
+                    }
+                }
+            }
+
+        }
+    }
+    section:nth-child(4){
+        .row{
+            .left-side{
+                width: 100%;
+                img{
+                    height: 100%;
+                }
+                h3,p{
+                    display: none;
+                }
+            }
+
+            .right-side{
+                width: 100%;
+                p:nth-child(1){
+                    display: none;
+                }
+                h1{
+                    width: 100%;
+                }
+                p:nth-child(3){
+                    width: 100%;
+                }
+                .buttons{
+                    width: 100%;
+                    flex-direction: column;
+                    .button{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+}

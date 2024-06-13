@@ -1,0 +1,96 @@
+@media screen and (max-width:540px) {
+    section:nth-child(1){
+        nav{
+            .hanburger{
+                gap: calc(0.2rem + 0.5vw);
+                width: 60px;
+                height: 60px;
+                div{
+                    width: 40%;
+                    height: 1vw;
+                    background-color: white;
+                }
+            }
+        }
+        .content{
+            gap: 30px;
+    
+            h1{
+                font-size: calc(1.60rem + 0.5vw) !important;
+                width:292px;
+            }
+    
+            button{
+                padding: calc(0.5rem + 0.5vw) calc(2.5rem + 0.5vw);
+                font-size: calc(1rem + 0.5vw);
+            }
+        }
+    }
+    section:nth-child(3){
+        .row{
+            gap: calc(1rem + 0.5vw);
+            .person{
+                p{
+                    font-size: calc(1.2rem + 0.5vw);
+                    width: 100%;
+                }
+                i{
+                    font-size: calc(0.6rem + 0.5vw);
+                }
+            }
+            p{
+                font-size: calc(1.3rem + 0.5vw);
+                width:100%;
+            }
+            button{
+                background-color: transparent;
+                color: black;
+                border: 1px solid black;
+                padding: calc(0.3rem + 0.5vw) calc(3rem + 0.5vw);
+                font-size: calc(1rem + 0.5vw);
+                border-radius: 10px;
+                transition: 0.3s;
+                cursor: pointer;
+            }
+            button:hover{
+                color: white;
+                border-color: #137547;
+                background-color: #137547;
+            }
+        }
+    }
+    section:nth-child(4){
+        .row{
+            .left-side{
+                height: calc(80vh + 0.5vw);
+            }
+        }
+    }
+    section:nth-child(5){
+        .row{
+            gap: 20px;
+            h1{
+                font-size: calc(2rem + 0.5vw);
+                width:100%;
+            }
+    
+            P{
+                font-size: calc(0.7rem + 0.5vw);
+                width:80%;
+            }
+    
+            button{
+                padding: calc(0.4rem + 0.5vw) calc(2.5rem + 0.5vw);
+                font-size: calc(0.8rem + 0.5vw);
+            }
+        }
+    }
+    section:nth-child(6){
+        .row{
+            .links{
+                flex-direction: column;
+                gap: calc(1.5rem + 0.5vw);
+            }
+        }
+    }
+}
