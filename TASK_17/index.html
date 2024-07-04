@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="mian-container">
+        <form class="credit-form" onsubmit="submitCredit()">
+            <div>
+                <label for="fullname_input">Fullname</label>
+                <input type="text" id="fullname_input" required placeholder="Enter fullname...">
+            </div>
+            <div>
+                <label for="credit_amount_input">Credit Amount</label>
+                <input type="number" id="credit_amount_input" min="500" max="50000" required placeholder="Enter credit amount...">
+            </div>
+            <div>
+                <label for="credit_duration_input">Credit Duration</label>
+                <select required id="credit_duration_input">
+                    <option hidden>Select credit duration</option>
+                    <option value="6">6 month</option>
+                    <option value="12">12 month</option>
+                    <option value="24">24 month</option>
+                    <option value="36">36 month</option>
+                    <option value="48">48 month</option>
+                </select>
+            </div>
+            <div>
+                <label for="salary_input">Salary</label>
+                <input type="number" id="salary_input" min="500" max="50000" required placeholder="Enter salary...">
+            </div>
+            <button id="submit_input">SUBMIT CREDITE OPTION</button>
+        </form>
+        <div class="bank_info_container">
+            <h1>Credit calculator</h1>
+            <div class="bottom">
+                <div class="left-side">
+                    <p id="fullname">Fullname:</p>
+                    <p id="credit_amount">Credit amount:</p>
+                    <p id="credit_duration">Credit duration:</p>
+                    <p id="customer_salary">Customer's salary:</p>
+                </div>
+                <div class="right-side">
+                    <p id="total_credit_amount">Total credit amount:</p>
+                    <p id="monthy_pay">Monthy pay:</p>
+                    <p id="salary_rate">Salary rate:</p>
+                    <p id="status">Status:</p>
+                </div>
+            </div>
+            <button id="confirm_credit">Confirm credit</button>
+        </div>
+    </div>
+    <script src="./sript.js"></script>
+</body>
+</html>
