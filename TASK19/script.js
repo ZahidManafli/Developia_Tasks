@@ -21,7 +21,7 @@ login_button.addEventListener("click",function(){
             <i id="check" class="fa fa-check"></i>
             `
             setTimeout(function(){
-                window.location.href = "http://127.0.0.1:5501/TASK_19/homepage/index.html"
+                window.location.href = "http://127.0.0.1:5500/TASK19/homepage/index.html"
             },1000)
         }else{
             exampleModalLabel3.innerText = "Məlumatlar yanlışdır..."
