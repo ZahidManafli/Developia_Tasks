@@ -72,6 +72,8 @@ register_button.addEventListener("click",function(){
             username_register.value =""
             password_register.value = ""
             confirm_password_register.value = ""
+            password_register.style.border = "1px solid #ced4da"
+            confirm_password_register.style.border = "1px solid #ced4da"
         }else{
             exampleModalLabel3.innerText = "Məlumatlar düzgün doldurulmamışdır..."
             body_of_modal3.innerHTML = `
@@ -93,3 +95,18 @@ register_button.addEventListener("click",function(){
     },3000)
 })
 
+password_register.addEventListener("input",function(){
+    if(regExp.test(password_register.value)){
+        password_register.style.border = "1px solid green"
+    }else{
+        password_register.style.border = "1px solid red"
+    }
+})
+
+confirm_password_register.addEventListener("input",function(){
+    if(confirm_password_register.value == password_register.value){
+        confirm_password_register.style.border = "1px solid green"
+    }else{
+        confirm_password_register.style.border = "1px solid red"
+    }
+})
