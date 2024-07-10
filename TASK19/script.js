@@ -15,7 +15,7 @@ let regExp = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$/;
 login_button.addEventListener("click",function(){
     exampleModalLabel3.innerText = "Məlumatlar yoxlanılır..."
     setTimeout(function(){
-        if(username==username_login.value.trim() && password==password_login.value.trim()){
+        if(username==username_login.value.trim() && password==password_login.value.trim() && username_login.value.trim() != "" && password_login.value.trim() != ""){
             exampleModalLabel3.innerText = "Əsas Səhifəyə yönləndirilir..."
             body_of_modal3.innerHTML = `
             <i id="check" class="fa fa-check"></i>
