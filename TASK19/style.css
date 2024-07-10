@@ -1,0 +1,28 @@
+
+/* loading animation */
+.loading{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 10px solid;
+    border-color: #ccc green #ccc #ccc;
+    animation: loading 2s infinite;
+  }
+  
+  @keyframes loading {
+    from{
+      transform: rotate(0);
+    }
+    to{
+      transform: rotate(360deg);
+    }
+  }
+
+  #check{
+    color: green;
+    font-size: calc(2rem + 0.5vw);
+  }
+  #close{
+    color: red;
+    font-size: calc(2rem + 0.5vw);
+  }
