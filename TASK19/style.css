@@ -1,3 +1,14 @@
+.no-outline:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+input{
+  border: none !important;
+  border-bottom: 1px solid gray !important;
+}
+
+
 /* loading animation */
 .loading{
     width: 100px;
