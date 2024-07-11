@@ -93,9 +93,9 @@ register_button.addEventListener("click",function(){
                 username_register.value =""
                 password_register.value = ""
                 confirm_password_register.value = ""
-                password_register.style.border = "1px solid #ced4da"
-                confirm_password_register.style.border = "1px solid #ced4da"
-                username_register.style.border = "1px solid #ced4da"
+                password_register.style.borderBottom = "1px solid #ced4da"
+                confirm_password_register.style.borderBottom = "1px solid #ced4da"
+                username_register.style.borderBottom = "1px solid #ced4da"
                 register_button.disabled = true;
             }else{
                 exampleModalLabel3.innerText = "Məlumatlar düzgün doldurulmamışdır..."
@@ -122,60 +122,56 @@ register_button.addEventListener("click",function(){
 // Seventh step: declare event that what will happen if we write something into inputs:
 username_register.addEventListener("input",function(){
     if(username_regExp.test(username_register.value)){
-        username_register.style.border = "1px solid green"
+        username_register.style.color = "green"
         if(confirm_password_register.value.trim() != "" && password_register.value.trim() != ""){
             register_button.disabled = false;
         }
     }else{
-        username_register.style.border = "1px solid red"
+        username_register.style.color = "red"
         register_button.disabled=true;
     }
 })
 
 username_login.addEventListener("input",function(){
     if(username_regExp.test(username_login.value)){
-        username_login.style.border = "1px solid green"
         if(regExp.test(password_login.value)){
             login_button.disabled = false;
         }
     }else{
-        username_login.style.border = "1px solid red"
         login_button.disabled=true;
     }
 })
 
 password_login.addEventListener("input",function(){
     if(regExp.test(password_login.value)){
-        password_login.style.border = "1px solid green"
         if(username_regExp.test(username_login.value)){
             login_button.disabled = false;
         }
     }else{
-        password_login.style.border = "1px solid red"
         login_button.disabled=true;
     }
 })
 
 password_register.addEventListener("input",function(){
     if(regExp.test(password_register.value)){
-        password_register.style.border = "1px solid green"
+        password_register.style.color = "green"
         if(confirm_password_register.value.trim() != "" && username_register.value.trim() != ""){
             register_button.disabled = false;
         }
     }else{
-        password_register.style.border = "1px solid red"
+        password_register.style.color = "red"
         register_button.disabled=true;
     }
 })
 
 confirm_password_register.addEventListener("input",function(){
     if(confirm_password_register.value == password_register.value && confirm_password_register.value.trim() != ""){
-        confirm_password_register.style.border = "1px solid green"
+        confirm_password_register.style.color = "green"
         if(username_register.value.trim() != ""){
             register_button.disabled = false;
         }
     }else{
-        confirm_password_register.style.border = "1px solid red"
+        confirm_password_register.style.color = "red"
         register_button.disabled = true;
     }
 })
