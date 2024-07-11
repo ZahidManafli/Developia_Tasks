@@ -1,3 +1,4 @@
+// First step: we call html elements:
 let username_login = document.getElementById("username_login")
 let password_login = document.getElementById("password_login")
 let login_button = document.getElementById("login_button")
@@ -8,16 +9,28 @@ let register_button = document.getElementById("register_button")
 let body_of_modal3 = document.getElementById("body_of_modal3")
 let footer_of_modal3 = document.getElementById("footer_of_modal3")
 let exampleModalLabel3 = document.getElementById("exampleModalLabel3")
+
+// Second step: We create username and password to check login panel:
 let username="";
 let password="";
+
+// Third step: create regular expression to check username and password valid or not:
 let username_regExp = /^[a-zA-Z0-9_]{3,16}$/
 let regExp = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$/;
+
+// Four step: If DOM load then register button and login button is disabled. Because value of inputs 
+// if empty then cannot register or log in button willn't click by user:
 register_button.disabled = true;
 login_button.disabled = true;
 
+// Fifth step: declare event that what will happen if we click login input:
 login_button.addEventListener("click",function(){
+
+    // This condition check value of inputs are empty or not:
     if(username_login.value.trim() != "" && password_login.value.trim() != ""){
         exampleModalLabel3.innerText = "Məlumatlar yoxlanılır..."
+
+        // This just all actions happen 3 second after to show loading animation to user:
         setTimeout(function(){
             if(username==username_login.value.trim() && password==password_login.value.trim() && username_login.value.trim() != "" && password_login.value.trim() != ""){
                 exampleModalLabel3.innerText = "Əsas Səhifəyə yönləndirilir..."
@@ -49,9 +62,14 @@ login_button.addEventListener("click",function(){
     }
 })
 
+// Sixth step: declare event that what will happen if we click register input:
 register_button.addEventListener("click",function(){
+
+    // This condition check value of inputs are empty or not:
     if(username_register.value.trim() != "" && password_register.value.trim() != "" && confirm_password_register.value.trim() != ""){
         exampleModalLabel3.innerText = "Məlumatlar yoxlanılır..."
+
+        // This just all actions happen 3 second after to show loading animation to user:
         setTimeout(function(){
             if(username_regExp.test(username_register.value) && username_register.value.trim() != "" && regExp.test(password_register.value) == true && confirm_password_register.value==password_register.value){
                 exampleModalLabel3.innerText = "İstifadəçi uğurla əlavə olundu!"
@@ -101,6 +119,7 @@ register_button.addEventListener("click",function(){
     }
 })
 
+// Seventh step: declare event that what will happen if we write something into inputs:
 username_register.addEventListener("input",function(){
     if(username_regExp.test(username_register.value)){
         username_register.style.border = "1px solid green"
@@ -112,6 +131,7 @@ username_register.addEventListener("input",function(){
         register_button.disabled=true;
     }
 })
+
 username_login.addEventListener("input",function(){
     if(username_regExp.test(username_login.value)){
         username_login.style.border = "1px solid green"
