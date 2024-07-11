@@ -19,7 +19,7 @@ let username_regExp = /^[a-zA-Z0-9_]{3,16}$/
 let regExp = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[\W_]).{8,}$/;
 
 // Four step: If DOM load then register button and login button is disabled. Because value of inputs 
-// if empty then cannot register or log in button willn't click by user:
+// if empty then register or log in button willn't click by user:
 register_button.disabled = true;
 login_button.disabled = true;
 
