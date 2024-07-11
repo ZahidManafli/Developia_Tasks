@@ -6,6 +6,7 @@
 input{
   border: none !important;
   border-bottom: 1px solid gray !important;
+  border-radius: 0 !important;
 }
 
 
