@@ -28,7 +28,7 @@ login_button.addEventListener("click",function(){
                     window.location.href = "http://127.0.0.1:5500/TASK19/homepage/index.html"
                 },1000)
             }else{
-                exampleModalLabel3.innerText = "Məlumatlar yanlışdır..."
+                exampleModalLabel3.innerText = "İstifadəçi tapılmadı..."
                 body_of_modal3.innerHTML = `
                 <i id="close" class="fa fa-close"></i>
                 `
