@@ -115,7 +115,7 @@ username_register.addEventListener("input",function(){
 username_login.addEventListener("input",function(){
     if(username_regExp.test(username_login.value)){
         username_login.style.border = "1px solid green"
-        if(password_login.value.trim() != ""){
+        if(regExp.test(password_login.value)){
             login_button.disabled = false;
         }
     }else{
@@ -127,7 +127,7 @@ username_login.addEventListener("input",function(){
 password_login.addEventListener("input",function(){
     if(regExp.test(password_login.value)){
         password_login.style.border = "1px solid green"
-        if(username_login.value.trim() != ""){
+        if(username_regExp.test(username_login.value)){
             login_button.disabled = false;
         }
     }else{
@@ -139,7 +139,7 @@ password_login.addEventListener("input",function(){
 password_register.addEventListener("input",function(){
     if(regExp.test(password_register.value)){
         password_register.style.border = "1px solid green"
-        if(confirm_password_register.value.trim() != ""){
+        if(confirm_password_register.value.trim() != "" && username_register.value.trim() != ""){
             register_button.disabled = false;
         }
     }else{
@@ -151,7 +151,9 @@ password_register.addEventListener("input",function(){
 confirm_password_register.addEventListener("input",function(){
     if(confirm_password_register.value == password_register.value){
         confirm_password_register.style.border = "1px solid green"
-        register_button.disabled = false;
+        if(username_register.value.trim() != ""){
+            register_button.disabled = false;
+        }
     }else{
         confirm_password_register.style.border = "1px solid red"
         register_button.disabled = true;
