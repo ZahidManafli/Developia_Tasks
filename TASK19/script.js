@@ -149,7 +149,7 @@ password_register.addEventListener("input",function(){
 })
 
 confirm_password_register.addEventListener("input",function(){
-    if(confirm_password_register.value == password_register.value){
+    if(confirm_password_register.value == password_register.value && confirm_password_register.value.trim() != ""){
         confirm_password_register.style.border = "1px solid green"
         if(username_register.value.trim() != ""){
             register_button.disabled = false;
