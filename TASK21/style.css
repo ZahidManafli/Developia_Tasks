@@ -1,0 +1,48 @@
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+form{
+    width: 50% !important;
+    border: 1px dashed black;
+    background-color: wheat;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.4);
+    height: calc(45rem + 0.5vw);
+}
+.products{
+    width: 100% !important;
+    background-color: gray;
+    box-shadow: 10px 15px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+#products_container div{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: calc(1rem + 0.5vw);
+    border: 1px dashed white;
+}
+
+#products_container div .color{
+    display: flex;
+    flex-direction: row;
+    gap: calc(1rem + 0.5vw);
+    align-items: center;
+    border: none;
+}
+
+#products_container div .color p{
+    padding: 0 !important;
+    margin:  0 !important;
+    align-items: center;
+}
+
+#color_of_car{
+    display: inline;
+    width: 20px;
+    height: 20px;
+}
