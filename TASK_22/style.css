@@ -1,0 +1,28 @@
+.main-container{
+    width: 100%;
+    display: grid;
+    gap: calc(1rem + 0.5vw);
+    grid-template-columns: repeat(3,auto);
+}
+
+.main-container .countries-card{
+    display: flex;
+    flex-direction: column;
+    padding: calc(0.5rem + 0.5vw);
+    border: 1px solid gray;
+    border-radius: 10px;
+    gap: calc(0.5rem + 0.5vw);
+    text-align: center;
+    height: calc(16rem + 0.5vw);
+    align-items: center;
+    width: calc(20rem + 0.5vw);
+}
+
+.main-container .countries-card img{
+    width: 80%;
+    height: 50%;
+}
+
+.main-container .countries-card a{
+    color: black;
+}
